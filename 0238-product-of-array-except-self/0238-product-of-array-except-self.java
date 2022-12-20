@@ -20,3 +20,6 @@ class Solution {
         
     }
 }
+
+
+// TC o(n) & SC o(1) where space of answer array is ignore
