@@ -1,7 +1,8 @@
 class Solution {
 
     //To understand the Q watch video from notes.......
-
+    //https://youtu.be/8RErc0VXAo8
+    
     //reverse function.....
     public static void reverse(int nums[],int l,int r){
         while(l<r){
