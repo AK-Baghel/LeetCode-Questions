@@ -32,6 +32,5 @@ class Solution {
         //reverse complete array
         reverse(nums,0,nums.length-1);
 
-
     }
 }
