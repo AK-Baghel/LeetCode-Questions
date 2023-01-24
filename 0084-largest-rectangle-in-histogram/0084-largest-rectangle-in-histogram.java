@@ -7,6 +7,7 @@ class Solution {
 
         Stack <Integer> s=new Stack <> ();
 
+        //next smaller right
         for(int i=heights.length-1;i>=0;i--){
             while(!s.isEmpty() && heights[i]<=heights[s.peek()]){
                 s.pop();
@@ -22,6 +23,8 @@ class Solution {
 
         s=new Stack <> ();
 
+        
+        //next smaller left
         for(int i=0;i<heights.length;i++){
             while(!s.isEmpty() && heights[i]<=heights[s.peek()]){
                 s.pop();
