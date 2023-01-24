@@ -1,5 +1,6 @@
 class Solution {
     public int largestRectangleArea(int[] heights) {
+        
         int maxArea=0;
         int nsr[]=new int[heights.length];
         int nsl[]=new int[heights.length];
