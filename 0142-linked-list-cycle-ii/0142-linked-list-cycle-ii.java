@@ -1,6 +1,7 @@
 public class Solution {
     public ListNode detectCycle(ListNode head) {
-
+        
+        //Checking LINKEDlist is Cyclic or not
         boolean flag=false;
         ListNode slow=head;
         ListNode fast=head;
@@ -12,9 +13,12 @@ public class Solution {
                 break;
             }
         }
+        
+        //if flag ==false, means LinkedList is not cyclic
         if(flag == false)
             return null;
         
+        //finding the meeting point where slow & fast will meet
         slow=head;
         ListNode prev=null;
         while(slow!=fast){
