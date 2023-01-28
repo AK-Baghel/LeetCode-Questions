@@ -1,9 +1,6 @@
 class Solution {
     public ListNode swapNodes(ListNode head, int k) {
         
-        // if(k==1)
-        //     return head;
-        
         //Counting the Size of LinkedList
         int i=1,count=0;
         ListNode temp1=head;
