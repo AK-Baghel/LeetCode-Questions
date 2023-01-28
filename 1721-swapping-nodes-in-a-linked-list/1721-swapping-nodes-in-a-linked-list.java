@@ -1,37 +1,38 @@
 class Solution {
     public ListNode swapNodes(ListNode head, int k) {
         
-        int count=1;
+        // if(k==1)
+        //     return head;
         
-        ListNode temp2=head;
-        while(temp2.next!=null){
-            temp2=temp2.next;
-            count++;
-        }
-        
+        //Counting the Size of LinkedList
+        int i=1,count=0;
         ListNode temp1=head;
-        int i=1;
-        if(k==1){
-            temp1=head;
-        }
-        else{
-            while(i!=k){
-                i++;
-                temp1=temp1.next;
-            }
+        while(temp1!=null){
+            count++;
+            temp1=temp1.next;
         }
         
-        int end=count-k+1;
-        temp2=head;
+        //Finding Node at distance k
         i=1;
-        while(i!=end){
+        temp1=head;
+        while(i!=k){
+            i++;
+            temp1=temp1.next;
+        }
+        
+        //Finding Node from last at K distance
+        i=1;
+        ListNode temp2=head;
+        while(i!=(count-k+1)){
             i++;
             temp2=temp2.next;
         }
-
+        
+        //Swapping temp1 & temp2 Node
         count=temp1.val;
         temp1.val=temp2.val;
         temp2.val=count;
+        
         return head;
     }
 }
