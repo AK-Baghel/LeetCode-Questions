@@ -1,7 +1,7 @@
 class Solution {
     public int oddCells(int m, int n, int[][] indices) {
         int[][] mat = new int[m][n];
-        for(int[] rc : indices)
+        for(int rc[] : indices)
         {
             for(int i = 0;i<n;i++)
                 mat[rc[0]][i]++;
