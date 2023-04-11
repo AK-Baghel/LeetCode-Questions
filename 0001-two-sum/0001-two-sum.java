@@ -1,3 +1,4 @@
+// https://www.geeksforgeeks.org/check-if-pair-with-given-sum-exists-in-array/
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         int n=nums.length;
